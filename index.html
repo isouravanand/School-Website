@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+    <div id="banner">
+        <img src="Images/school.jpeg" alt="banner">
+        <div class="video-overlay">
+            <iframe src="https://www.youtube.com/embed/VDve40OgaAA?si=9Ly4_AnR5tAe4C23" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="about_card">
+        <div class="about_text">
+            <section id="about">
+                <h1>About Us</h1>
+                <p>
+                    Welcome to Purnea Public School — Shaping Minds, Building Futures.
+                    <br><br>
+                    Purnea Public School is a leading educational institution committed to nurturing young minds with
+                    academic
+                    excellence, moral values, and 21st-century skills. Located in the heart of Purnea, our school
+                    provides a
+                    safe, inclusive, and intellectually stimulating environment for students from Nursery to Class 12.
+                    <br><br>
+                    With a team of experienced teachers, smart classrooms, and modern facilities, we focus on the
+                    holistic
+                    development
+                    of every child — empowering them to become confident, responsible, and compassionate global
+                    citizens.
+                    <br><br>
+                    Join us in our mission to inspire learning, ignite curiosity, and unlock every student’s full
+                    potential.
+                </p>
+            </section>
+        </div>
+        <div class="about_image">
+            <img src="Images/vvit about1.jpeg" alt="school image">
+        </div>
+    </div>
+    <div class="about_card">
+        <div class="about_text">
+            <h1>PROGRAMMES DETAILS</h1>
+
+            <div class="card-container">
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/kinder.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">A fun-filled early learning program focused on foundational literacy,
+                            numeracy, creativity, and social skills — nurturing young minds for a bright start..</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/10.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">A comprehensive curriculum with dedicated support for board exam
+                            preparation, concept mastery, and skill-building for academic excellence</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/12.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Specialized streams with expert guidance to prepare students for board
+                            exams, competitive entrances, and future career paths in science, commerce, or humanities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Schhol achivment section -->
+    <div class="about_card">
+        <div class="about_text">
+            <h1>SCHOOL ACHIEVEMENT</h1>
+
+            <div class="card-container">
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/10 topper.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Congratulations to our Class 10 toppers for achieving outstanding scores in
+                            the board exams! Your hard work and dedication make us proud.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/12 topper.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Applause for our Class 12 toppers who excelled in the board exams across
+                            Science, Commerce, and Arts streams — setting a benchmark of academic brilliance.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/footbal winer.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Our school football team clinched the district championship with passion,
+                            teamwork, and unstoppable spirit. A proud moment for the entire school!
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="Images/quiz winner.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Hats off to our quiz team for winning the district-level quiz competition!
+                            Their quick thinking and knowledge brought glory to the school.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="footer"></div>
+
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+
+</body>
+
+</html>
