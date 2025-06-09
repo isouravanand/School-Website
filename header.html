@@ -8,7 +8,7 @@
 </div>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: red;">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,22 +18,39 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Academics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="sylabus.html">Syllabus</a></li>
+                        <li><a class="dropdown-item" href="exam.html">Exam Schedule</a></li>
+                        <li><a class="dropdown-item" href="rules.html">Rules</a></li>
+                        <li><a class="dropdown-item" href="calender.html">School Calender</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a class="nav-link" href="admission.html">Admission Form</a></li>
+                <li class="nav-item"><a class="nav-link" href="facility.html">Facilities</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact us.html">Contact Us</a></li>
             </ul>
-            <form class="d-flex" role="search">
+            <!-- <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+                <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+            </form> -->
         </div>
     </div>
 </nav>
 
 <marquee behavior="scroll" direction="left" scrollamount="5"
     style="background-color: yellow; padding: 5px; font-weight: bold;">
-    <a href="#" style="margin-right: 30px; color: red; text-decoration: none;">Admission open for 2025–26 batch</a>
-    <a href="#" style="margin-right: 30px; color: red; text-decoration: none;">Notice For Id ul Fitr Holiday 2025</a>
-    <a href="#" style="margin-right: 30px; color: red; text-decoration: none;">Result out for std 1-8 midsem 2025</a>
+    <a href="admission.html" style="margin-right: 30px; color: red; text-decoration: none;">Admission open for 2025–26
+        batch</a>
+    <a href="Images/Notice (806) for Bakrid Vacation June'2025.docx.pdf" target="_blank"
+        style="margin-right: 30px; color: red; text-decoration: none;">Notice For Id ul Fitr Holiday 2025</a>
+    <a href="https://results.beup.ac.in/MTech1stSem2023_B2023Results.aspx" target="_blank"
+        style="margin-right: 30px; color: red; text-decoration: none;">Result out for std 1-8 midsem 2025</a>
 </marquee>
